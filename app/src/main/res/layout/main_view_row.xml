@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageRestaurantCover"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/txtRestaurantName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_page"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@id/txtRestaurantDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageRestaurantCover"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        tools:text="Name can very very very very very very very very very very very very very very long" />
+
+    <TextView
+        android:id="@+id/txtRestaurantDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_page"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@id/txtRestaurantTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageRestaurantCover"
+        app:layout_constraintTop_toBottomOf="@id/txtRestaurantName"
+        tools:text="description can very very very very very very very very very very very very very very long" />
+    />
+
+    <TextView
+        android:id="@+id/txtRestaurantTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_page"
+        android:singleLine="true"
+        android:textAlignment="viewEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageRestaurantCover"
+        app:layout_constraintTop_toBottomOf="@id/txtRestaurantDescription"
+        tools:text="1 hour" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
