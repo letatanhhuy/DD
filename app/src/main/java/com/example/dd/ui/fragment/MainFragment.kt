@@ -68,13 +68,6 @@ class MainFragment : Fragment() {
             switchContent(R.id.mainframe, detailsFragment)
         }
 
-        val checkBoxListener = object : CompoundButton.OnCheckedChangeListener {
-            override fun onCheckedChanged(p0: CompoundButton?, p1: Boolean) {
-
-            }
-
-        }
-
         val restSet = sharedpreferences?.getStringSet(ProjectConstant.FAV_LIST, emptySet())
         val tempSet = mutableSetOf<String>()
         Log.d(TAG, "load fav list: ${restSet?.size}")
@@ -82,6 +75,7 @@ class MainFragment : Fragment() {
             tempSet.addAll(restSet)
             Log.d(TAG, "check: ${tempSet.size}")
         }
+
         mainListAdapter = MainListAdapter(clickListener,sharedpreferences, tempSet)
 
         view.recyclerViewRestaurant.apply {
