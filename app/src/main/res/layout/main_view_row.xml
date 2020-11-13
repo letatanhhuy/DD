@@ -50,9 +50,15 @@
         android:layout_marginStart="@dimen/margin_page"
         android:singleLine="true"
         android:textAlignment="viewEnd"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/imageRestaurantCover"
         app:layout_constraintTop_toBottomOf="@id/txtRestaurantDescription"
         tools:text="1 hour" />
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkboxFavourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageRestaurantCover"
+        app:layout_constraintTop_toBottomOf="@id/txtRestaurantTime"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

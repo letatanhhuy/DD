@@ -7,6 +7,7 @@ object ProjectConstant {
     const val BASE_URL = "https://api.doordash.com"
 
     const val RESTAURANT_ID_TAG = "RESTAURANT_ID"
+    const val FAV_LIST = "FAV_RES_LIST"
 
     const val FREE = "free"
 }
